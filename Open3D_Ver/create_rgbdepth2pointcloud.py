@@ -4,19 +4,6 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 
-"""
-point cloud 합치기 http://www.open3d.org/docs/latest/tutorial/Advanced/multiway_registration.html
-
-point cloud를 파일로?.. http://www.open3d.org/docs/release/python_api/open3d.io.write_point_cloud.html 
-
-point cloud downsampling etc. http://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html
-
-
-point colud 
-
-http://www.open3d.org/docs/0.7.0/python_api/open3d.geometry.create_point_cloud_from_depth_image.html  
-"""
-
 def config_parser():
 
     import configargparse
@@ -25,7 +12,7 @@ def config_parser():
     #                     help='frequency of render_poses video saving')
     # parser.add_argument("--half_res", action='store_true',
     #                     help='load blender synthetic data at 400x400 instead of 800x800')
-    parser.add_argument("--datadir", type=str, default='/home/hyunjin/PycharmProjects/nerf-pytorch/logs',
+    parser.add_argument("--datadir", type=str, default='./',
                         help='input data directory')
     parser.add_argument("--expname", type=str, default='/fern_test_origin',
                         help='experiment name')
@@ -50,7 +37,7 @@ def load_data(args):
 
     #TODO:erase
     #test
-    basedir = '/home/hyunjin/PycharmProjects/nerf-pytorch/logs/fr3_teddy_test_01'
+    # basedir = '/home/hyunjin/PycharmProjects/nerf-pytorch/logs/fr3_teddy_test_01'
     color_dir = os.path.join(basedir, 'test_0')
     depth_dir = os.path.join(basedir, 'test_depth_0')
 
@@ -74,7 +61,7 @@ def load_data(args):
     #draw_image(all_rgbd,all_depth)
     return all_color, all_depth, all_rgbd
 
-def draw_pcd():
+def draw_pcd(args):
 
     parser = config_parser()
     args = parser.parse_args()
@@ -104,4 +91,6 @@ def draw_pcd():
 
 #python create_rgb2pcd_open3d.py
 if __name__=='__main__':
-    draw_pcd()
+    parser = config_parser()
+    args = parser.parse_args()
+    draw_pcd(args)
