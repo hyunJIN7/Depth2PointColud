@@ -4,10 +4,6 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 
-"""
-for tum data
-"""
-
 def config_parser():
 
     import configargparse
@@ -16,7 +12,9 @@ def config_parser():
     #                     help='frequency of render_poses video saving')
     # parser.add_argument("--half_res", action='store_true',
     #                     help='load blender synthetic data at 400x400 instead of 800x800')
-    parser.add_argument("--datadir", type=str, default='./pointcloud',
+    parser.add_argument("--basedir", type=str, default='./pointcloud',
+                        help='input data directory')
+    parser.add_argument("--datadir", type=str, default='',
                         help='input data directory')
     parser.add_argument("--expname", type=str, default='/fern_test_origin',
                         help='experiment name')
@@ -89,7 +87,7 @@ def draw_pcd(args):
     o3d.visualization.draw_geometries([all_pcd_down])#, zoom=0.35) zoom error
 
 
-#python create_rgb2pcd_open3d.py
+#python pointcloud/create_rgbdepth2pointcloud.py
 if __name__=='__main__':
     parser = config_parser()
     args = parser.parse_args()
