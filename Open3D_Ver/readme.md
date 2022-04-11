@@ -22,5 +22,6 @@
 
 
 ## open3d install
-``
-[설치 참고](http://www.open3d.org/docs/release/getting_started.html)
+[설치 참고](http://www.open3d.org/docs/release/getting_started.html)     
+`pip install open3d`
+
