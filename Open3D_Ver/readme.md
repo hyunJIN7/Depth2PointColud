@@ -1,4 +1,4 @@
-open3D version
+# open3D version
 
 정리 나중에
 
@@ -9,13 +9,8 @@ open3D version
 
 
 :heavy_check_mark: [참고](http://www.open3d.org/docs/latest/tutorial/Basic/rgbd_image.html)
-
 :heavy_check_mark: [point cloud 합치기](http://www.open3d.org/docs/latest/tutorial/Advanced/multiway_registration.html)
-
 :heavy_check_mark: [point cloud를 파일로?..](http://www.open3d.org/docs/release/python_api/open3d.io.write_point_cloud.html) 
-
 :heavy_check_mark: [point cloud downsampling etc.](http://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html)
-
 :heavy_check_mark: [point colud](http://www.open3d.org/docs/0.7.0/python_api/open3d.geometry.create_point_cloud_from_depth_image.html)
-
 
