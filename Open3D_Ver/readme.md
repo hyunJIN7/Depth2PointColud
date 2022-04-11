@@ -8,8 +8,9 @@ open3D version
 파일 경로도 막 지정한 상태라 수정 필요.
 
 
-참고
-http://www.open3d.org/docs/latest/tutorial/Basic/rgbd_image.html
-
-
+[참고](http://www.open3d.org/docs/latest/tutorial/Basic/rgbd_image.html)
+[point cloud 합치기](http://www.open3d.org/docs/latest/tutorial/Advanced/multiway_registration.html)
+[point cloud를 파일로?..](http://www.open3d.org/docs/release/python_api/open3d.io.write_point_cloud.html) 
+[point cloud downsampling etc.](http://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html)
+[point colud](http://www.open3d.org/docs/0.7.0/python_api/open3d.geometry.create_point_cloud_from_depth_image.html)
 
