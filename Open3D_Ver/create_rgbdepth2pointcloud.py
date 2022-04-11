@@ -12,7 +12,7 @@ def config_parser():
     #                     help='frequency of render_poses video saving')
     # parser.add_argument("--half_res", action='store_true',
     #                     help='load blender synthetic data at 400x400 instead of 800x800')
-    parser.add_argument("--datadir", type=str, default='./',
+    parser.add_argument("--datadir", type=str, default='./pointcloud',
                         help='input data directory')
     parser.add_argument("--expname", type=str, default='/fern_test_origin',
                         help='experiment name')
@@ -35,11 +35,10 @@ def load_data(args):
     # color_dir = os.path.join(args.datadir, 'testset_200000')
     # depth_dir = os.path.join(args.datadir, 'testset_depth_200000')
 
-    #TODO:erase
+
     #test
-    # basedir = '/home/hyunjin/PycharmProjects/nerf-pytorch/logs/fr3_teddy_test_01'
-    color_dir = os.path.join(basedir, 'test_0')
-    depth_dir = os.path.join(basedir, 'test_depth_0')
+    color_dir = os.path.join(args.basedir, 'color')
+    depth_dir = os.path.join(args.basedir, 'depth')
 
 
     print("Read TUM dataset")
