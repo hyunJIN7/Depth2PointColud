@@ -63,9 +63,6 @@ def load_data(args):
 
 def draw_pcd(args):
 
-    parser = config_parser()
-    args = parser.parse_args()
-
     all_color,all_depth,all_rgbd = load_data(args)
 
     all_pcd= o3d.geometry.PointCloud()
