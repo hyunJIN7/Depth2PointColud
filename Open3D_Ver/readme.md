@@ -23,13 +23,16 @@
 ### custom 데이터로 
 :heavy_check_mark: [stack overflow custom data pointcloud](https://stackoverflow.com/questions/68331356/how-i-convert-depth-image-3d-using-open3d-lib-in-python)
 
-`pcd = o3d.geometry.PointCloud.create_from_depth_image(depth_image,                                                        
+```bash
+pcd = o3d.geometry.PointCloud.create_from_depth_image(depth_image,                                                        
                                                       intrinisc_cam_parameters, 
                                                       extrinsic_cam_parameters
-                                                     )`
+                                                     )
+```
+                                                     
 :heavy_check_mark: [stack overflow update cam in,extrinsic in open3d](https://stackoverflow.com/questions/62809091/update-camera-intrinsic-parameter-in-open3d-python)
 
-`
+```bash
 intrinsic = o3d.camera.PinholeCameraIntrinsic(w, h, fx,fy, cx, cy)
 intrinsic.intrinsic_matrix = [[fx, 0, cx], [0, fy, cy], [0, 0, 1]]
 cam = o3d.camera.PinholeCameraParameters()
@@ -37,7 +40,7 @@ cam.intrinsic = intrinsic
 cam.extrinsic = np.array([[0., 0., 0., 0.], [0., 0., 0., 0.], [0., 0., 0., 0.], [0., 0., 0., 1.]])
 pcd = o3d.geometry.create_point_cloud_from_rgbd_image(
     rgbd_image, cam.intrinsic, cam.extrinsic)
-`
+```
 
 ## open3d install
 [설치 참고](http://www.open3d.org/docs/release/getting_started.html)     
