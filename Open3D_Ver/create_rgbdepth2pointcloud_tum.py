@@ -4,6 +4,10 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 
+"""
+for tum data
+"""
+
 def config_parser():
 
     import configargparse
