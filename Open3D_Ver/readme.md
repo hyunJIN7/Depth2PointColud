@@ -20,7 +20,6 @@
 :heavy_check_mark: [point colud](http://www.open3d.org/docs/0.7.0/python_api/open3d.geometry.create_point_cloud_from_depth_image.html)
 
 :heavy_check_mark: [stack overflow](https://stackoverflow.com/questions/68331356/how-i-convert-depth-image-3d-using-open3d-lib-in-python)
-You'll need to pass the following min parameters    
 `pcd = o3d.geometry.PointCloud.create_from_depth_image(depth_image,                                                        
                                                       intrinisc_cam_parameters, 
                                                       extrinsic_cam_parameters
