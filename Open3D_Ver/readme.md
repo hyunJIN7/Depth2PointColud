@@ -1,12 +1,12 @@
 # open3D version
+`python create_rgbdepth2pointcloud.py --extrinsic extrinsic.txt --expname llff_lab01`
 
-정리 나중에
+- extrinsic.txt : `r11 r12 r13 tx r21 r22 r23 ty r31 r32 r33 tz`
+- color,depth 이미지
+- intrinsic.txt
 
-현재 코드 여러 RGB depth map을 point cloud로 만드는 것 가능하나 각 위치를 고려안한 상태. 
-위치 고려해서 반영해야함.
-일단 depth map 하나의 대해서만 가능한 상태.
-파일 경로도 막 지정한 상태라 수정 필요.
 
+### 참고 페이지
 :heavy_check_mark:[open3d](http://www.open3d.org/)
 
 :heavy_check_mark: [참고](http://www.open3d.org/docs/latest/tutorial/Basic/rgbd_image.html)
