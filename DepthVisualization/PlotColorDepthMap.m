@@ -3,7 +3,7 @@
 % example image
 % depthCur = getImgInTUMRGBDdataset(datasetPath, ICSLRGBDdataset, cam, imgIdx, 'depth');
 
-depthCur =  imread('depth_2.png');
+depthCur =  imread('depth_0.png');
 
 figure;
 imshow(depthCur, []); colormap jet;
@@ -11,3 +11,4 @@ set(gca,'units','pixels'); x = get(gca,'position');
 set(gcf,'units','pixels'); y = get(gcf,'position');
 set(gcf,'position',[y(1) y(2) x(3) x(4)]);
 set(gca,'units','normalized','position',[0 0 1 1]);
+saveas(gcf,'color_depth.png')
